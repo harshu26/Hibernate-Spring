@@ -1,5 +1,6 @@
 package com.lab.app;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -51,8 +52,36 @@ public class Employee {
 		this.age = age;
 	}
 	
+	
+	private SBU businessUnit;
+	
+	public SBU getSbu() {
+		return businessUnit;
+	}
+	
+	@Autowired
+	public void setSbu(SBU businessUnit) {
+		this.businessUnit = businessUnit;
+	}
+	
+	public Employee() {
+		
+	}
+	public Employee(SBU businessUnit) {
+		this.businessUnit=businessUnit;
+	}
+	
 	public void display() {
 		System.out.println("Id :"+employeeId+" "+"Name:"+employeeName+" "+"Salary:"+salary+" "+"B Unit:"+unit+" "+"Age:"+age);
+	}
+	
+	public SBU getSbuDetails() {
+		SBU sbu = new SBU();
+		sbu.setSbuId("PES-BU");
+		sbu.setSbuName("Product Engineering Services");
+		sbu.setSbuHead("Kiran Rao");
+		
+		return sbu;
 	}
 	
 }

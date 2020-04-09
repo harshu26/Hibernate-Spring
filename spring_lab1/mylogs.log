@@ -136,3 +136,51 @@
 2020-04-09 18:04:05 DEBUG PropertySourcesPropertyResolver:115 - Found key 'salary' in PropertySource 'class path resource [employee.properties]' with value of type String
 2020-04-09 18:04:05 DEBUG PropertySourcesPropertyResolver:115 - Found key 'bu' in PropertySource 'class path resource [employee.properties]' with value of type String
 2020-04-09 18:04:05 DEBUG PropertySourcesPropertyResolver:115 - Found key 'age' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:03:40 DEBUG AnnotationConfigApplicationContext:594 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@504bae78
+2020-04-09 21:03:40 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-04-09 21:03:41 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Module_3\lab\spring_lab1\target\classes\com\lab\app\Employee.class]
+2020-04-09 21:03:41 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Module_3\lab\spring_lab1\target\classes\com\lab\app\SBU.class]
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'javaConfig'
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'employee'
+2020-04-09 21:03:41 DEBUG PropertySourcesPropertyResolver:115 - Found key 'id' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:03:41 DEBUG PropertySourcesPropertyResolver:115 - Found key 'name' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:03:41 DEBUG PropertySourcesPropertyResolver:115 - Found key 'salary' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:03:41 DEBUG PropertySourcesPropertyResolver:115 - Found key 'bu' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:03:41 DEBUG PropertySourcesPropertyResolver:115 - Found key 'age' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:03:41 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'SBU'
+2020-04-09 21:04:11 DEBUG AnnotationConfigApplicationContext:594 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@504bae78
+2020-04-09 21:04:11 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-04-09 21:04:12 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Module_3\lab\spring_lab1\target\classes\com\lab\app\Employee.class]
+2020-04-09 21:04:12 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Module_3\lab\spring_lab1\target\classes\com\lab\app\SBU.class]
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'javaConfig'
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'employee'
+2020-04-09 21:04:12 DEBUG PropertySourcesPropertyResolver:115 - Found key 'id' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:12 DEBUG PropertySourcesPropertyResolver:115 - Found key 'name' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:12 DEBUG PropertySourcesPropertyResolver:115 - Found key 'salary' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:12 DEBUG PropertySourcesPropertyResolver:115 - Found key 'bu' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:12 DEBUG PropertySourcesPropertyResolver:115 - Found key 'age' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:12 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'SBU'
+2020-04-09 21:04:28 DEBUG AnnotationConfigApplicationContext:594 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@504bae78
+2020-04-09 21:04:28 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-04-09 21:04:28 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Module_3\lab\spring_lab1\target\classes\com\lab\app\Employee.class]
+2020-04-09 21:04:28 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Module_3\lab\spring_lab1\target\classes\com\lab\app\SBU.class]
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'javaConfig'
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'employee'
+2020-04-09 21:04:29 DEBUG PropertySourcesPropertyResolver:115 - Found key 'id' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:29 DEBUG PropertySourcesPropertyResolver:115 - Found key 'name' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:29 DEBUG PropertySourcesPropertyResolver:115 - Found key 'salary' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:29 DEBUG PropertySourcesPropertyResolver:115 - Found key 'bu' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:29 DEBUG PropertySourcesPropertyResolver:115 - Found key 'age' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-09 21:04:29 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'SBU'

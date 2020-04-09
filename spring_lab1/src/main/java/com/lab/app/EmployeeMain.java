@@ -15,6 +15,14 @@ public class EmployeeMain {
      Employee employee = context.getBean(Employee.class);
      System.out.println("Details are:");
      employee.display();
+     
+     EmployeeMain em = new EmployeeMain();
+     SBU sbu1=employee.getSbuDetails();
+     em.printSBUDetails(sbu1);
+	}
+	
+	void printSBUDetails(SBU sbu) {
+		System.out.println("SBU Details= SBU"+"["+"sbuCode:"+sbu.getSbuId()+" "+"sbuHead:"+sbu.getSbuHead()+" "+"sbuName:"+sbu.getSbuName()+"]");
 	}
 
 }
