@@ -12,8 +12,9 @@ public class EmployeeMain {
      context.register(configurationClass);
      context.refresh();
 
-     EmployeeDetails employee = context.getBean(EmployeeDetails.class);
-     employee.details();
+     Employee employee = context.getBean(Employee.class);
+     System.out.println("Details are:");
+     employee.display();
 	}
 
 }
