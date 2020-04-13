@@ -8,11 +8,7 @@
 <body>
 <form method="get" action="processregister">
 
-<label>Customer Id</label>
-<div>
-<input type="number" name="custid">
-</div>
-<br>
+
 <label>Customer Name</label>
 <div>
 <input type="text" name="custname">

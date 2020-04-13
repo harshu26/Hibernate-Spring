@@ -29,9 +29,8 @@ public class CustomerController {
 	        return new ModelAndView("customerregister");
 	    }
 	    @GetMapping("/processregister")
-	    public ModelAndView registerEmployee(@RequestParam("custid") int custId, @RequestParam("custname") String custName) {
+	    public ModelAndView registerEmployee( @RequestParam("custname") String custName) {
 	        Customer customer=new Customer();
-	        customer.setcId(custId);
 	        customer.setcName(custName);
 	        customer=service.registerCustomer(customer);
 	        return new ModelAndView("customerdetails",  "customer", customer);

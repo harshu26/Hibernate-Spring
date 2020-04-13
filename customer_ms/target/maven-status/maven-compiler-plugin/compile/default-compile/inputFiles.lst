@@ -1,8 +1,0 @@
-F:\Module_3\customer_ms\src\main\java\org\cap\config\MyWebApplicationInitializer.java
-F:\Module_3\customer_ms\src\main\java\org\cap\entities\Customer.java
-F:\Module_3\customer_ms\src\main\java\org\cap\config\MyWebMVCConfig.java
-F:\Module_3\customer_ms\src\main\java\org\cap\dao\ICustomerDao.java
-F:\Module_3\customer_ms\src\main\java\org\cap\service\ICustomerService.java
-F:\Module_3\customer_ms\src\main\java\org\cap\dao\CustomerDaoImpl.java
-F:\Module_3\customer_ms\src\main\java\org\cap\service\CustomerServiceImpl.java
-F:\Module_3\customer_ms\src\main\java\org\cap\controller\CustomerController.java
