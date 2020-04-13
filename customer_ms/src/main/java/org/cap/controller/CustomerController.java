@@ -45,7 +45,6 @@ public class CustomerController {
 	    @GetMapping("/processupdate")
 	    public ModelAndView updateCustomer(@RequestParam("custid") int custId, @RequestParam("custname") String custName) {
 	        Customer customer=new Customer();
-	        customer.setcId(custId);
 	        customer.setcName(custName);
 	        customer=service.updateCustomer(customer);
 	        return new ModelAndView("customerdetails",  "customer", customer);
