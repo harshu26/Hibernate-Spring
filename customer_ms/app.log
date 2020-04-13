@@ -1,0 +1,54 @@
+[main] INFO  org.springframework.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcher'
+[main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myWebMVCConfig' of type [org.cap.config.MyWebMVCConfig$$EnhancerBySpringCGLIB$$c0f3b56b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog  - MLog clients using slf4j logging.
+[main] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[main] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.3.10.Final}
+[main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[main] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge9j9a9vxt5711hxl7e6|76396509, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge9j9a9vxt5711hxl7e6|76396509, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@localhost:1521:xe, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 5.3.2.Final
+[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[main] INFO  org.springframework.web.servlet.DispatcherServlet  - Completed initialization in 8348 ms
+[qtp1973471376-20] WARN  org.springframework.web.servlet.PageNotFound  - No mapping for GET /
+[qtp1973471376-16] WARN  org.springframework.web.servlet.PageNotFound  - No mapping for GET /favicon.ico
+[Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+[main] INFO  org.springframework.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcher'
+[main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myWebMVCConfig' of type [org.cap.config.MyWebMVCConfig$$EnhancerBySpringCGLIB$$6b43c19e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog  - MLog clients using slf4j logging.
+[main] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[main] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.3.10.Final}
+[main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[main] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge9j9a9vy0lma6w5o0q|4c1d59cd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge9j9a9vy0lma6w5o0q|4c1d59cd, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@localhost:1521:xe, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 5.3.2.Final
+[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[main] INFO  org.springframework.web.servlet.DispatcherServlet  - Completed initialization in 7321 ms
+[qtp150950036-18] WARN  org.springframework.web.servlet.PageNotFound  - No mapping for GET /
+[qtp150950036-20] WARN  org.springframework.web.servlet.PageNotFound  - No mapping for GET /favicon.ico
+[Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+[main] INFO  org.springframework.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcher'
+[main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'myWebMVCConfig' of type [org.cap.config.MyWebMVCConfig$$EnhancerBySpringCGLIB$$58dc7f67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog  - MLog clients using slf4j logging.
+[main] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[main] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.3.10.Final}
+[main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+[main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[main] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge9j9a9vyctoxr245uo|629984eb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge9j9a9vyctoxr245uo|629984eb, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@localhost:1521:xe, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 5.3.2.Final
+[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[main] INFO  org.springframework.web.servlet.DispatcherServlet  - Completed initialization in 7765 ms
+[qtp889640998-20] WARN  org.springframework.web.servlet.PageNotFound  - No mapping for GET /
+[qtp889640998-14] WARN  org.springframework.web.servlet.PageNotFound  - No mapping for GET /favicon.ico
+[Thread-2] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
