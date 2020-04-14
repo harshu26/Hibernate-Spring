@@ -1,5 +1,7 @@
 package org.cap.service;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.cap.dao.ICustomerDao;
@@ -42,5 +44,18 @@ public class CustomerServiceImpl implements ICustomerService {
 		Customer cust = customerDao.updateCustomer(customer);
 		return cust;
 	}
+	
+	@Override
+	public List<Customer> fetchAllCustomers(){
+		List<Customer>list = customerDao.fetchAllCustomers();
+		return list;
+	}
+	
+	@Override
+	public boolean delete(int id) {
+		boolean result=customerDao.delete(id);
+		return result;
+	}
+	
 
 }

@@ -1,8 +1,10 @@
 package org.cap.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-
+import javax.persistence.TypedQuery;
 import org.cap.entities.Customer;
 import org.springframework.stereotype.Repository;
 
@@ -38,5 +40,21 @@ public class CustomerDaoImpl implements ICustomerDao {
 		customer = entityManager.merge(customer);
 		return customer;
 	}
+	
+	@Override
+    public List<Customer> fetchAllCustomers() {
+        String jql = "from Customers";
+        TypedQuery<Customer> query = entityManager.createQuery(jql, Customer.class);
+        List<Customer> custList = query.getResultList();
+        return custList;
+    }
+
+	 @Override
+	    public boolean delete(int id) {
+	        Customer customer = fetchById(id);
+	        getEntityManager().remove(customer);
+	        return true;
+	    }
+
 
 }

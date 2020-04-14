@@ -1,4 +1,6 @@
 package org.cap.controller;
+import java.util.List;
+
 import org.cap.entities.Customer;
 import org.cap.service.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,12 +46,18 @@ public class CustomerController {
 	    @GetMapping("/processupdate")
 	    public ModelAndView updateCustomer(@RequestParam("custid") int custId, @RequestParam("custname") String custName) {
 	        Customer customer=new Customer();
-		customer.setcId(custId);
+	        customer.setcId(custId);
 	        customer.setcName(custName);
 	        customer=service.updateCustomer(customer);
 	        return new ModelAndView("customerdetails",  "customer", customer);
 	    }   
 	    
+	    @GetMapping("/displayall")
+	    public ModelAndView displayAllCustomers(){
+	        List<Customer> customers=service.fetchAllCustomers();
+	        ModelAndView modelAndView=new ModelAndView("allcustomers","customers",customers);
+	        return modelAndView;
+	    }
 	    
    
 }
