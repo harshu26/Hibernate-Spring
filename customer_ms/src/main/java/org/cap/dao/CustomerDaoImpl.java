@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import org.cap.entities.Customer;
+import org.cap.exceptions.CustomerNotFoundException;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -32,7 +33,10 @@ public class CustomerDaoImpl implements ICustomerDao {
 	@Override
 	public Customer fetchById(int id) {
 		 Customer customer = entityManager.find(Customer.class, id);
-	        return customer;
+	     if(id!=customer.getcId()) {
+	    	 throw new CustomerNotFoundException("Incorrect Id!");
+	     }
+		 return customer;
 	}
 
 	@Override
@@ -43,7 +47,7 @@ public class CustomerDaoImpl implements ICustomerDao {
 	
 	@Override
     public List<Customer> fetchAllCustomers() {
-        String jql = "from Customers";
+        String jql = "from Customer";
         TypedQuery<Customer> query = entityManager.createQuery(jql, Customer.class);
         List<Customer> custList = query.getResultList();
         return custList;
