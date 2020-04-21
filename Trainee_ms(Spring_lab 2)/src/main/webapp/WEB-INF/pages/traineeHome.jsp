@@ -15,8 +15,6 @@
 <br>
 <a href="delete">Delete Trainee  </a>
 <br>
-<a href="fetchall">Get All Trainees Details  </a>
-<br>
 <a href="logout">Logout </a>
 
 </body>

@@ -28,6 +28,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @ComponentScan("org.cap")
 @PropertySource("classpath:admin.properties")
+@PropertySource("classpath:orm.properties")
 
 public class MyWebMVCConfig {
 	 private static Logger Log = LoggerFactory.getLogger(MyWebMVCConfig.class);

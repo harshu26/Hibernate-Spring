@@ -30,10 +30,16 @@ public class TraineeController {
     
     //for validating log-in credentials.
     public boolean credentialsCorrect(int id, String password) {
-        if (password == null || password.isEmpty()) {
+        boolean flag=true;
+    	if (password == null || password.isEmpty()) {
             return false;
         }
-        return admin.getPassword().equals(password);
+    	admin = new Admin();
+        if(id==admin.getId()&&password.equals(admin.getPassword())) {
+        //return admin.getPassword().equals(password);
+        	flag= true;
+        }
+    return flag;
     }
     
    
