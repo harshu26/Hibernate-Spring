@@ -1,7 +1,9 @@
 package org.cap.service;
 
-import java.util.List;
+
+
 import javax.transaction.Transactional;
+
 import org.cap.dao.ITraineeDao;
 import org.cap.entities.Trainee;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,11 +47,6 @@ public class TraineeServiceImpl implements ITraineeService{
 		return t;
 	}
 
-	@Override
-	public boolean credentialsCorrect(int id, String password) {
-		boolean credentials = traineeDao.credentialsCorrect(id, password);
-		return credentials;
-	}
-
+	
     
 }

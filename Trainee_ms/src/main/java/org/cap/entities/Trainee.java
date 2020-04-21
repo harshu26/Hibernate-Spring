@@ -1,11 +1,9 @@
 package org.cap.entities;
 
-import org.springframework.beans.factory.annotation.Value;
+import javax.persistence.Entity;
 
-import javax.validation.constraints.Min;
-
+@Entity
 public class Trainee {
-
 
     private int id;
     private String name;

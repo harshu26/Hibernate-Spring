@@ -1,5 +1,6 @@
 package org.cap.controller;
 
+import org.cap.entities.Admin;
 import org.cap.entities.Trainee;
 import org.cap.service.ITraineeService;
 import org.cap.session.SessionDetails;
@@ -7,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import java.util.*;
 
 @Controller
 public class TraineeController {
@@ -25,11 +25,23 @@ public class TraineeController {
     @Autowired
     private SessionDetails sessionDetails;   
     
+    @Autowired
+    private Admin admin;
+    
+    //for validating log-in credentials.
+    public boolean credentialsCorrect(int id, String password) {
+        if (password == null || password.isEmpty()) {
+            return false;
+        }
+        return admin.getPassword().equals(password);
+    }
+    
    
     
     @GetMapping("/processlogin")
     public ModelAndView login(@RequestParam("id")int id , @RequestParam("password") String password){
-        boolean correct=traineeService.credentialsCorrect(id,password);
+    	TraineeController controller = new TraineeController();
+        boolean correct=controller.credentialsCorrect(id,password);
         if(!correct){
          return new ModelAndView("/login");
         }
@@ -87,7 +99,7 @@ public class TraineeController {
         trainee.setId(traineeId);
         trainee.setName(traineeName);
         trainee.setLocation(location);
-        trainee = traineeService.modifyTrainee(trainee);
+        traineeService.modifyTrainee(trainee);
     	return new ModelAndView("traineedetails",  "trainee", trainee);
     }
 
