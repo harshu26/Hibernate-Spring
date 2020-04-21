@@ -87,7 +87,7 @@ public class TraineeController {
         trainee.setId(traineeId);
         trainee.setName(traineeName);
         trainee.setLocation(location);
-        traineeService.modifyTrainee(trainee);
+        trainee = traineeService.modifyTrainee(trainee);
     	return new ModelAndView("traineedetails",  "trainee", trainee);
     }
 
