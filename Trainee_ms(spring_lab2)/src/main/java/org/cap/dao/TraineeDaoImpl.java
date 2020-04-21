@@ -1,5 +1,7 @@
 package org.cap.dao;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import org.cap.entities.Trainee;
 import org.springframework.stereotype.Repository;
 
@@ -8,7 +10,18 @@ import java.util.*;
 
 @Repository
 public class TraineeDaoImpl implements ITraineeDao{
-    private Map<Integer,Trainee>store=new HashMap<>();
+	
+    private EntityManager entityManager;
+
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
+
+    @PersistenceContext
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+	
     private Map<Integer,Trainee>admin = new HashMap<>();
     
     public TraineeDaoImpl() {
@@ -22,28 +35,26 @@ public class TraineeDaoImpl implements ITraineeDao{
     
 	@Override
 	public void addTrainee(Trainee t) {
-		store.put(t.getId(),t);
-		
+	 getEntityManager().merge(t);
+	        		
 	}
 
 	@Override
 	public void deleteTrainee(int id) {
-		 Trainee t = store.get(id);
-    	 	 store.remove(t.getId());
+	     Trainee trainee = fetchTrainee(id);
+	     getEntityManager().remove(trainee);
     	}
 
 	@Override
 	public Trainee modifyTrainee(Trainee t) {
-    	if(store.containsKey(t.getId())) {
-    		store.put(t.getId(),t);
-    	}
-    	return t;
+    		t = entityManager.merge(t);
+		return t;
 	}
 
 	@Override
 	public Trainee fetchTrainee(int id) {
-		Trainee t = store.get(id);
-		return t;
+	   Trainee trainee = entityManager.find(Trainee.class, id);
+		return trainee;
 	}
 
 
