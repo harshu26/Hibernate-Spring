@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping(value = "/products")
 public class ProductRestController {
 	 private static Logger Log = LoggerFactory.getLogger(ProductRestController.class);
 	@Autowired
@@ -49,7 +50,7 @@ public class ProductRestController {
         return response;
     }
     
-    @PostMapping("/products/add")
+    @PostMapping("/add")
     public ResponseEntity<Product> addProduct(@RequestBody ProductDto dto) {
         Product product = convert(dto);
         product = service.addProduct(product);
@@ -57,7 +58,7 @@ public class ProductRestController {
         return response;
     }
     
-    @GetMapping("/products/find/{id}")
+    @GetMapping("/find/{id}")
     public ResponseEntity<Product> getProduct(@PathVariable("id") int id) {
         Product product = service.fetchById(id);
         if(product==null){
@@ -69,7 +70,7 @@ public class ProductRestController {
     }
     
     
-    @PutMapping("/products/update/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<Product>updateProduct(@RequestBody ProductDto dto ,@PathVariable("id")int id){
         Product product=convert(dto);
         product.setId(id);
@@ -85,7 +86,7 @@ public class ProductRestController {
         return response;
     }
 
-    @DeleteMapping("/products/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Boolean>deleteProduct(@PathVariable int id){
        boolean result= service.delete(id);
        ResponseEntity<Boolean>response=new ResponseEntity<>(result, HttpStatus.OK);
