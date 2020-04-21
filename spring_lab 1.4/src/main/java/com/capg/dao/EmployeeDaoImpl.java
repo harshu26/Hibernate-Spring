@@ -20,9 +20,9 @@ public class EmployeeDaoImpl implements IEmployeeDao{
 	 @Override
 	 public Employee fetchById(int id) {
 		 Employee employee = null;
-		 if(store.containsKey(id)) {
-			  employee=store.get(id);
-		 }
+		 
+		  employee=store.get(id);
+		
 		 return employee;
 	 }
 	 
