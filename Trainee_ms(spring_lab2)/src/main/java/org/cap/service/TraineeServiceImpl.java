@@ -1,13 +1,14 @@
 package org.cap.service;
 
 import java.util.List;
-
+import javax.transaction.Transactional;
 import org.cap.dao.ITraineeDao;
 import org.cap.entities.Trainee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class TraineeServiceImpl implements ITraineeService{
     private ITraineeDao traineeDao;
 
