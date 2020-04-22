@@ -34,7 +34,7 @@ public class TraineeController {
     	if (password == null || password.isEmpty()) {
             return false;
         }
-    	admin = new Admin();
+    	//admin = new Admin();
         if(id==admin.getId()&&password.equals(admin.getPassword())) {
         //return admin.getPassword().equals(password);
         	flag= true;
@@ -46,8 +46,7 @@ public class TraineeController {
     
     @GetMapping("/processlogin")
     public ModelAndView login(@RequestParam("id")int id , @RequestParam("password") String password){
-    	TraineeController controller = new TraineeController();
-        boolean correct=controller.credentialsCorrect(id,password);
+        boolean correct=credentialsCorrect(id,password);
         if(!correct){
          return new ModelAndView("/login");
         }
